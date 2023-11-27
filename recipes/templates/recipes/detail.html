@@ -23,18 +23,20 @@
       <p>Published on: {{ recipe.pub_date }}</p>
     </div>
 
-    {% if comments %}
-    <ul class="recipescontainer">
-      {% for comment in comments %}
-      <div class="card">
-        <span>{{ comment.choice_text}}</span>
-      </div>
-      {% endfor %}
-    </ul>
-    {% else %}
-    <p>No comments are available.</p>
-    {% endif %}
+    <div class="comments">
+      <h2>Comments about this recipe</h2>
+      {% if comments %}
+      <ul class="recipescontainer">
+        {% for comment in comments %}
 
+        <p class="comment">{{ comment.choice_text}}</p>
+
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>No comments are available.</p>
+      {% endif %}
+    </div>
     <form action="{% url 'recipes:addcomment' recipe.id %}" method="post">
       {% csrf_token %}
       <fieldset>

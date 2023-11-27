@@ -1,6 +1,8 @@
 # Family Recipes Django App
 
-This Django application is designed to help you keep track of your family recipes. Share and organize your favorite recipes with ease.
+This Django application is designed to help you keep track of your family recipes. Share and organize your favorite recipes with ease.  
+
+[Software demo Video](https://youtu.be/dmjwf-wc80s)
 
 ## Table of Contents
 

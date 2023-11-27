@@ -1,0 +1,67 @@
+<!-- templates/recipes/recipe_detail.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ recipe.recipe_title }}</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
+  </head>
+  <body>
+    {% include 'recipes/navbar.html' %}
+    <div class="container text-center">
+      <h1>Welcome to <strong>Mabiko!</strong></h1>
+      <h2>Our Story</h2>
+      <p>
+        At <strong>Mabiko</strong>, we believe that cooking is more than just
+        preparing a meal; it's an art, a journey, and a delightful experience.
+        Our passion for bringing people together through the joy of cooking is
+        what inspired us to create this platform.
+      </p>
+      <h3>Our Mission</h3>
+      <p>
+        Empowering Home Cooks: We aim to empower home cooks of all skill levels
+        by providing a diverse collection of delicious and easy-to-follow
+        recipes. Whether you're a seasoned chef or a kitchen novice, we have
+        something for everyone. Celebrating Culinary Diversity: Our platform
+        celebrates the rich tapestry of culinary traditions from around the
+        world. Explore a world of flavors, ingredients, and cooking techniques
+        that make each recipe unique and exciting. Creating Memorable Moments:
+        We believe that some of life's best moments happen around the dining
+        table. Our recipes are crafted not just to feed your body but to create
+        memorable experiences that you'll cherish with your loved ones.
+      </p>
+      <h4>What Sets Us Apart</h4>
+      <p>
+        Curated Recipes: Every recipe on our platform is carefully curated,
+        tested, and perfected by our team of passionate food enthusiasts. We
+        prioritize quality, flavor, and simplicity to ensure your cooking
+        experience is both enjoyable and rewarding. Community and Interaction:
+        Join our community of fellow food lovers! Share your culinary creations,
+        exchange tips and tricks, and connect with like-minded individuals who
+        share your love for good food. Continuous Inspiration: Our collection is
+        ever-growing, with new recipes and inspiration added regularly. Whether
+        you're looking for quick weeknight dinners, special occasion treats, or
+        dietary-specific options, you'll find something to inspire your next
+        culinary adventure.
+      </p>
+      <h5>Join Us on this Culinary Journey</h5>
+      <p>
+        We invite you to join us on this exciting culinary journey. Explore our
+        recipes, connect with our community, and make cooking an integral part
+        of your lifestyle. Thank you for being a part of
+        <strong>Mabiko</strong>. Happy Cooking!
+      </p>
+    </div>
+    
+  </body>
+</html>

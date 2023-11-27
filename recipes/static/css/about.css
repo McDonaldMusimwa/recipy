@@ -1,0 +1,56 @@
+/* styles.css */
+h1{
+    margin: 0 40%;
+  }
+  .bg-img {
+      /* The image used */
+      background-image: url("../images/food2.jpg"); /* Correcting the path */
+    
+      min-height: 380px;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+      /* Needed to position the navbar */
+      position: relative;
+    }
+    
+    /* Position the navbar container inside the image */
+    .container {
+      position: absolute;
+      margin: 20px;
+      width: auto;
+    }
+    
+    /* The navbar */
+    .topnav {
+      overflow: hidden;
+      background-color: #3333333b;
+    }
+    
+    /* Navbar links */
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    /* Footer styles */
+.footer {
+    border-top:1PX solid #ffc107; /* Yellow background color */
+    color: #333; /* Text color */
+    padding: 20px 0;
+  }
+  
+  .footer p {
+    margin-bottom: 0; /* Remove default margin */
+  }
